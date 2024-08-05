@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body{
+  background-color: #f7eeff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg{
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  width: 100%;
+  height: 320px;
+  position: absolute;
+  top: 0;
+  /* z-index: 1; */
+}
+
+.container {
+  /* border: 1px solid red; */
+  height: auto;
+  width: 600px;
+  
+  /* margin: auto; */
+  background-color: #fff;
+  border-radius: 20px;
+  /* position: relative; */
+  z-index: 1;
+  padding: 40px;
+}
+
+.container h1{
+  color: #301534;
+  font-weight: 700;
+  font-size: 56px;
+  margin-bottom: 32px;
+}
+
+.container-accordion {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.accordion-header {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  color: #301534;
+  cursor: pointer;
+  margin-bottom: 24px;
+    
+}
+
+.accordion-header:hover{
+color: #AD28EB;
+}
+
+.accordion-header span {
+  /* flex-grow: initial; */
+  /* margin-right: 10px; */
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.accordion {
+  /* gap: 24px; */
+  display: flex;
+  flex-direction: column;
+  
+}
+
+hr {
+  margin-bottom: 24px;
+  color: #F8EEFF;
+}
+
+.accordion-body {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8B6990;
+  margin-bottom: 24px;
+  display: none;
+  overflow: auto;
+  transition: opacity .3s;
+}
+
+.accordion-body.active {
+  opacity: 1;
+  height: 100%;
+  padding: 5px 0;
+  display: block;
+}
+
+
+
+
+@media (max-width: 375px) {
+
+  body{
+    /* overflow: hidden; */
+    width: 375px;
+  }
+
+  .container {
+    width: 75%;
+    height: 60%;
+    padding: 20px;
+  }
+
+  .container h1 {
+    font-size: 32px;
+  }
+  .container img {
+    width: 24px;
+    height: auto;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .accordion-body {
+    font-size: 14px;
+  }
+
+  .accordion-header span {
+    /* flex-grow: initial; */
+    /* margin-right: 10px; */
+    max-width: 100%;
+    white-space: pre-line;
+    overflow: hidden;
+    
+  }
+
+}
+
+
+
+
+
+
