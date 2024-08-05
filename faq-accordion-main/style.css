@@ -22,18 +22,15 @@ body{
   height: 320px;
   position: absolute;
   top: 0;
-  /* z-index: 1; */
+  
 }
 
 .container {
-  /* border: 1px solid red; */
+  
   height: auto;
   width: 600px;
-  
-  /* margin: auto; */
   background-color: #fff;
   border-radius: 20px;
-  /* position: relative; */
   z-index: 1;
   padding: 40px;
 }
@@ -72,8 +69,6 @@ color: #AD28EB;
 }
 
 .accordion-header span {
-  /* flex-grow: initial; */
-  /* margin-right: 10px; */
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -81,7 +76,6 @@ color: #AD28EB;
 }
 
 .accordion {
-  /* gap: 24px; */
   display: flex;
   flex-direction: column;
   
@@ -115,7 +109,6 @@ hr {
 @media (max-width: 375px) {
 
   body{
-    /* overflow: hidden; */
     width: 375px;
   }
 
@@ -143,8 +136,6 @@ hr {
   }
 
   .accordion-header span {
-    /* flex-grow: initial; */
-    /* margin-right: 10px; */
     max-width: 100%;
     white-space: pre-line;
     overflow: hidden;
