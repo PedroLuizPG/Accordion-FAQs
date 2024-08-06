@@ -29,9 +29,7 @@ Users should be able to:
 ![image](https://github.com/user-attachments/assets/3742c54e-ad56-4db9-8c83-0706602efe8f)
 
 ### Links
-
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (([https://accordion-faqs-topaz.vercel.app/]))
 
 ## My process
 
